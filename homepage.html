@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<a href="homepage.html" ><img id="title" src="css/img/twoone.jpg"></a>
+			<link>
+				<a href="login.html" id="login">LOGIN</a>
+				<a href="register.html" id="signup">SIGN UP</a>
+			</link>
+
+			<div class="search">
+				<form>
+					<input type="text" placeholder="Search for..">
+					<input type="submit" name="" value="Go">
+				</form>
+			</div>
+		<hr>
+		</nav>
+
+		<imgslide>
+			<img class="slide" name="slide" src="css/img/two.jpg">
+		</imgslide>
+
+		<explore>
+	   		<p><a href="explore.html">Popular Recipes</a></p>
+	   </explore>
+
+	   <choicesone>
+	   		<img src="css/img/appetizer.jpg"><br/><center>Appetizer</center>
+	   </choicesone>	
+	   <choicestwo>
+	   		<img src="css/img/grill.jpg"><br/><center>Grill</center>
+	   </choicestwo>
+	   <choicesthree>
+	   		<img src="css/img/dessert3.jpg"><br/><center>Dessert</center>
+	   </choicesthree>
+	   <choicesfour>
+	   		<img src="css/img/main.jpg"><br/><center>Main Dish</center>
+	   </choicesfour>	
+
+	   <div class="choicesfood">
+	    	<fieldset>
+	    		<legend>Recipes</legend>
+			   		<small>Course</small>
+			   			<li><a href="">Appetizer and Snacks</a></li>
+			   			<li><a href="">Bread Recipes</a></li>
+			   			<li><a href="">Desserts</a></li>
+			   			<li><a href="">Drinks</a></li>
+			   			<li><a href="">Main Dishes</a></li>
+			   			<li><a href="">Salad Recipes</a></li>
+			   			<li><a href="">Side Dishes</a></li>
+			   			<li><a href="">Soup, Stews and Chili</a></li>	 
+			   		<small>Meals</small>
+			   			<li><a href="">Breakfast and Brunch</a></li>
+			   			<li><a href="">Lunch Recipes</a></li>
+			   			<li><a href="">Dinner Recipes</a></li>
+			   		<div class="choiceright">
+				   		<small>Main Ingredients</small>
+				   			<li><a href="">Fruits and Vegetables</a></li>
+				   			<li><a href="">Meat and Poultry</a></li>
+				   			<li><a href="">Pasta and Noodles</a></li>
+				   			<li><a href="">Seafoods Recipes</a></li>	
+				   	</div>
+				   	<div class="choiceright2">
+				   		<small>Special Recipes</small>
+				   			<li><a href="">Lutong Pinoy</a></li>	
+				   	</div>   	
+			</fieldset>
+		</div>
+
+	   <down>
+	   		<h3><a href="#">New Recipe</a></h3>
+	   </down>
+	   <new>
+	   		<img src="css/img/vege.png">
+	   </new>
+	   <newtext>
+	   		<p><i>Nikki Monique Macapayag Daug</i></p>
+	   			<parag>
+	   				<p>W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy. Copyright 1999-2015 by Refsnes Data. All Rights Reserved.</p>
+	   			</parag>
+	   </newtext>	
+	</div>
+
+
+
+ <script type="text/javascript">
+var image1 = new Image()
+image1.src = "css/img/two.jpg"
+var image2 = new Image()
+image2.src = "css/img/dessert.jpg"
+var image3 = new Image()
+image3.src = "css/img/dessert2.jpg"
+var image4 = new Image()
+image4.src = "css/img/ginataan.jpg"
+var image5 = new Image()
+image5.src = "css/img/kalabs.jpg"
+var image6 = new Image()
+image6.src = "css/img/shake.jpg"
+
+        var step=1;
+        function slideit()
+        {
+            document.images.slide.src = eval("image"+step+".src");
+            if(step<6)
+                step++;
+            else
+                step=1;
+            setTimeout("slideit()",2500);
+        }
+        slideit();
+
+        document.getElementById("foo").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+</script>
+
+</body>
+</html>
